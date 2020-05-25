@@ -2,99 +2,96 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="A web application that gives the user a fast and easy access to sessions and apps links for the most known web apps out there">
-    <title>Revoke.App</title>
-    <link rel="icon" type="image/png" href='{{ "images/favicon.png" | absURL }}'>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="A web application that gives the user a fast and easy access to sessions and apps links for the most known web apps out there">
+  <title>Revoke.App</title>
+  <link rel="icon" type="image/png" href='{{ "images/favicon.png" | absURL }}'>
 
-    <link rel="stylesheet" href='{{ "css/bulma.min.css" | absURL }}'>
-    <link rel="stylesheet" href='{{ "css/app.css" | absURL }}'>
-    <script src='{{ "app.js" | absURL }}' type='text/javascript'></script>
+  <link rel="stylesheet" href='{{ "css/bulma.min.css" | absURL }}'>
+  <link rel="stylesheet" href='{{ "css/app.css" | absURL }}'>
+  <script src='{{ "app.js" | absURL }}' type='text/javascript'></script>
 </head>
 
 <body>
-    <main class="container">
-        <section class="hero is-secondary is-small">
-            <div class="hero-head">
+  <main class="container">
+    <section class="hero is-secondary is-small">
+      <div class="hero-head">
+        <header>
+          <div class="navbar-brand">
+            <a class="navbar-item" href="https://revoke.app">
+              <h1 class="title is-1">Revoke.App</h1>
+            </a>
 
-                <header>
-                    <nav class="navbar" role="navigation" aria-label="main navigation">
-                        <div class="navbar-brand">
-                            <a class="navbar-item" href="https://revoke.app">
-                                <h1 class="title is-1">Revoke.App</h1>
-                            </a>
+          </div>
+        </header>
+      </div>
+      <div class="hero-body">
+        <h2 class="subtitle">
+          People tend to give an application access to their information on another one and forget about it
+          forever
+        </h2>
+        <p>
+          This website gives you an easy access to <strong>revoke</strong> the unnecessary web app permissions or
+          long forgetten sessions
+        </p>
+      </div>
+      <div class="hero-foot">
 
-                            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-                                <span aria-hidden="true"></span>
-                                <span aria-hidden="true"></span>
-                                <span aria-hidden="true"></span>
-                            </a>
-                        </div>
-                    </nav>
-                </header>
-            </div>
-            <div class="hero-body">
-                <h2 class="subtitle">
-                    People tend to give an application access to their information on an other one and forget about it
-                    forever
-                </h2>
-            </div>
-            <div class="hero-foot">
+        <div class="field">
+          <div class="control">
+            <input class="input is-medium is-info" type="search" id="searchInput" name="q"
+              placeholder="Type to search for apps to revoke" aria-label="Search">
+          </div>
+        </div>
+      </div>
+    </section>
 
-                <div class="field">
-                    <div class="control">
-                        <input class="input is-medium is-info" type="search"
-                            id="searchInput"
-                            name="q"
-                            placeholder="Type to search for apps to revoke" aria-label="Search">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <div id="apps">
-            <div class="columns is-multiline">
-                {{ range .Site.Data.apps }}
-                <div
-                    class="column is-mobile is-half-tablet is-one-third-desktop is-one-third-widescreen is-one-quarter-fullhd">
-                    <div class="tile is-parent is-vertical">
-                        <article class="tile is-child notification"
-                            style="background-color: {{.backgroundColor}}; color: {{.foregroundColor}};">
-                            <p class="title">{{.name}}</p>
-                            <div class="field is-grouped">
-                                {{ if .appsURL }}
-                                <p class="control">
-                                    <a class="button is-text is-white" target="_blank" href="{{.appsURL}}">
-                                        <span>Apps</span>
-                                    </a>
-                                </p>
-                                {{ end }}
-                                {{ if .sessionsURL }}
-                                <p class="control">
-                                    <a class="button is-text is-white" target="_blank" href="{{.sessionsURL}}">
-                                        <span>Sessions</span>
-                                    </a>
-                                </p>
-                                {{ end }}
-                            </div>
-                        </article>
-                    </div>
-                </div>
+    <div id="apps">
+      <div class="columns is-multiline">
+        {{ range .Site.Data.apps }}
+        <div class="column is-mobile is-half-tablet is-one-third-desktop is-one-third-widescreen is-one-quarter-fullhd">
+          <div class="tile is-parent is-vertical">
+            <article class="tile is-child notification"
+              style="background-color: {{.backgroundColor}}; color: {{.foregroundColor}};">
+              <p class="title">{{.name}}</p>
+              <div class="field is-grouped">
+                {{ if .appsURL }}
+                <p class="control">
+                  <a class="button is-text is-white" target="_blank" href="{{.appsURL}}">
+                    <span>Apps</span>
+                  </a>
+                </p>
                 {{ end }}
+                {{ if .sessionsURL }}
+                <p class="control">
+                  <a class="button is-text is-white" target="_blank" href="{{.sessionsURL}}">
+                    <span>Sessions</span>
+                  </a>
+                </p>
+                {{ end }}
+              </div>
+            </article>
+          </div>
+        </div>
+        {{ end }}
 
-            </div>
-        </div>
-    </main>
-    <footer class="footer">
-        <div class="content has-text-centered">
-            <p>
-                <strong>Revoke.App</strong> by <a href="https://belmoussaoui.com">Bilal Elmoussaoui</a>.
-                <a href="https://github.com/bilelmoussaoui/revoke.app">Source Code</a>
-            </p>
-        </div>
-    </footer>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Revoke.App</strong> by <a href="https://belmoussaoui.com">Bilal Elmoussaoui</a>
+      </p>
+
+      <p>
+        <a href="https://github.com/bilelmoussaoui/revoke.app">Source Code</a>
+
+      </p>
+    </div>
+  </footer>
 
 </body>
 
