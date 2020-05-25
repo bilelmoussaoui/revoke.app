@@ -1,3 +1,3 @@
-baseURL = "http://localhost:1313/"
+baseURL = "https://bilelmoussaoui.github.io/revoke.app/"
 languageCode = "en-us"
 title = "Revoke.App"
