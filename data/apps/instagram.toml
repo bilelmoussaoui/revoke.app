@@ -1,0 +1,5 @@
+name="Instagram"
+sessionsURL="https://www.instagram.com/session/login_activity/"
+appsURL="https://www.instagram.com/accounts/manage_access/"
+backgroundColor="#ffffff"
+foregroundColor="#231F20"

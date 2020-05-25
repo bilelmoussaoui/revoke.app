@@ -1,0 +1,5 @@
+name="LinkedIn"
+sessionsURL="https://www.linkedin.com/psettings/sessions"
+appsURL="https://www.linkedin.com/psettings/permitted-services"
+backgroundColor="#0077B5"
+foregroundColor="#ffffff"

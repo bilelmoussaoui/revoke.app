@@ -1,0 +1,5 @@
+name="Google"
+sessionsURL="https://myaccount.google.com/device-activity"
+appsURL="https://myaccount.google.com/permissions"
+backgroundColor="#E03F33"
+foregroundColor="#ffffff"

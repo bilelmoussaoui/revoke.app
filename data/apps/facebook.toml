@@ -1,0 +1,5 @@
+name="Facebook"
+sessionsURL="https://www.facebook.com/settings?tab=security"
+appsURL="https://www.facebook.com/settings?tab=applications&ref=settings"
+backgroundColor="#036EE4"
+foregroundColor="#ffffff"
