@@ -15,44 +15,47 @@
 </head>
 
 <body>
-  <main class="container">
+  <main>
     <section class="hero is-secondary is-small">
       <div class="hero-head">
-        <header>
+        <div class="container">
           <div class="navbar-brand">
             <a class="navbar-item" href="https://revoke.app">
-              <h1 class="title is-1">Revoke.App</h1>
+              <div class="title is-1">Revoke.App</div>
             </a>
-
           </div>
-        </header>
+        </div>
       </div>
       <div class="hero-body">
-        <h2 class="subtitle">
-          People tend to give an application access to their information on another one and forget about it
-          forever
-        </h2>
-        <p>
-          This website gives you an easy access to <strong>revoke</strong> the unnecessary web app permissions or
-          long forgetten sessions
-        </p>
-        <p>
-          <a href="https://github.com/bilelmoussaoui/revoke.app">Source Code</a>
+        <div class="container">
+          <h2 class="subtitle">
+            People tend to give an application access to their information on another one and forget about it
+            forever
+          </h2>
+          <p>
+            This website gives you an easy access to <strong>revoke</strong> the unnecessary Web Apps permissions or
+            long forgetten sessions
+          </p>
+          <p>
+            <a href="https://github.com/bilelmoussaoui/revoke.app">Source Code</a>
 
-        </p>
+          </p>
+        </div>
       </div>
       <div class="hero-foot">
+        <div class="container">
 
-        <div class="field">
-          <div class="control">
-            <input class="input is-medium is-info" type="search" id="searchInput" name="q"
-              placeholder="Type to search for apps to revoke" aria-label="Search">
+          <div class="field">
+            <div class="control">
+              <input class="input is-medium is-info" type="search" id="searchInput" name="q"
+                placeholder="Type to search for apps to revoke" aria-label="Search">
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <div id="apps">
+    <div id="apps" class="container">
       <div class="columns is-multiline">
         {{ range .Site.Data.apps }}
         <div class="column is-mobile is-half-tablet is-one-third-desktop is-one-third-widescreen is-one-quarter-fullhd">
