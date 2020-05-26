@@ -1,0 +1,5 @@
+name="Microsoft"
+sessionsURL="https://account.microsoft.com/devices/"
+appsURL="https://account.microsoft.com/privacy/"
+backgroundColor="#7CB500"
+foregroundColor="#ffffff"
