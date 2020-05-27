@@ -1,0 +1,5 @@
+name="Dropbox"
+sessionsURL="https://www.dropbox.com/account/security"
+appsURL="https://www.dropbox.com/account/connected_apps"
+backgroundColor="#FFFFFF"
+foregroundColor="#0062FF"
