@@ -1,4 +1,4 @@
 name="Apple"
-sessionsURL="https://appleid.apple.com/account/manage#devices"
+devicesURL="https://appleid.apple.com/account/manage#devices"
 backgroundColor="#696969"
 foregroundColor="#ffffff"
