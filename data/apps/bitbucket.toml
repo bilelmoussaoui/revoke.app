@@ -1,0 +1,5 @@
+name="Bitbucket"
+sessionsURL="https://bitbucket.org/account/settings/security/sessions"
+appsURL="https://bitbucket.org/account/settings/app-authorizations/"
+backgroundColor="#0747A6"
+foregroundColor="#ffffff"
