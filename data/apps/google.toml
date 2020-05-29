@@ -1,5 +1,4 @@
 name="Google"
-sessionsURL="https://myaccount.google.com/device-activity"
 appsURL="https://myaccount.google.com/permissions"
 devicesURL="https://myaccount.google.com/device-activity"
 backgroundColor="#E03F33"
