@@ -18,3 +18,4 @@ jobs:
       - name: Run tests
         run: |
           python3 tests/url_status_code.py
+          python3 tests/color_contrast.py

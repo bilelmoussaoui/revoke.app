@@ -27,7 +27,7 @@ for app_file in apps:
         if status_code in valid_responses:
           message += "✔️  "
         else:
-          message += "❌  "
+          message += "❌ "
           found_invalid = True
         message += f"{name}: {url}"
         print(message)
