@@ -4,7 +4,6 @@ document.addEventListener(
     function search (pattern) {
       const $tiles = document.querySelectorAll('div.tile')
       $tiles.forEach($tile => {
-        console.log($tile.querySelector('.title'))
         const title = $tile.querySelector('p.title').innerHTML
         if (title.toLowerCase().includes(pattern.toLowerCase())) {
           $tile.parentNode.style.display = 'block'
