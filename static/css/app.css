@@ -1,6 +1,19 @@
-html { height:100%; }
-body { position:absolute; top:0; bottom:0; right:0; left:0; }
-
+html {
+  height: 100%;
+}
+body {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.hero-head .navbar-item:focus {
+  background-color: #292929;
+}
+.hero-foot {
+  padding-bottom: 20px;
+}
 main.container {
   padding: 10px;
   padding-bottom: 60px; /* Height of the footer */
@@ -16,7 +29,7 @@ article.tile:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 article.tile p.title {
-  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.10);
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
   font-size: 36px;
 }
 article.tile p.control a.button {
@@ -34,10 +47,7 @@ footer.footer {
   background-color: white;
 }
 
-.input::-moz-placeholder,
-.input::-webkit-input-placeholder,
-.input:-moz-placeholder,
-.input:-ms-input-placeholder,
-.input::placeholder {
-  color: red !important;
+::placeholder {
+  color: rgba(0, 0, 0, 0.26) !important;
+  opacity: 1;
 }

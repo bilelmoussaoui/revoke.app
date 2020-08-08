@@ -16,43 +16,46 @@
 
 <body>
   <main>
-    <section class="hero is-secondary is-small">
+    <section class="hero is-dark is-small">
       <div class="hero-head">
         <div class="container">
-          <div class="navbar-brand">
-            <a class="navbar-item" href="https://revoke.app">
-              <div class="title is-1">Revoke.App</div>
-            </a>
+          <nav class="navbar">
+            <div class="navbar-brand">
+              <a class="navbar-item" href="https://revoke.app">
+                <div class="title is-1">Revoke.App</div>
+              </a>
+            </div>
+            <div class="navbar-menu">
+              <div class="navbar-end">
+                <a class="navbar-item" href="https://github.com/bilelmoussaoui/revoke.app">
+                  Source Code
+                </a>
+              </div>
+            </div>
+          </nav>
+          </a>
+          <div class="hero-body">
+            <div class="content is-medium">
+              <p class="">People tend to give an application access to their information on another one and forget about
+                it
+                forever. This website gives you an easy access to <b>revoke</b> the unnecessary Web applications
+                permissions or
+                long forgetten sessions
+              </p>
+            </div>
+
           </div>
-        </div>
-      </div>
-      <div class="hero-body">
-        <div class="container">
-          <h2 class="subtitle">
-            People tend to give an application access to their information on another one and forget about it
-            forever
-          </h2>
-          <p>
-            This website gives you an easy access to <strong>revoke</strong> the unnecessary Web Apps permissions or
-            long forgetten sessions
-          </p>
-          <p>
-            <a href="https://github.com/bilelmoussaoui/revoke.app">Source Code</a>
+          <div class="hero-foot">
+            <div class="container">
 
-          </p>
-        </div>
-      </div>
-      <div class="hero-foot">
-        <div class="container">
-
-          <div class="field">
-            <div class="control">
-              <input class="input is-medium is-info" type="search" id="searchInput" name="q"
-                placeholder="Type to search for apps to revoke" aria-label="Search">
+              <div class="field">
+                <div class="control">
+                  <input class="input is-medium is-rounded is-dark" type="search" id="searchInput" name="q"
+                    placeholder="Type to search for apps to revoke" aria-label="Search">
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
     </section>
 
     <div id="apps" class="container">
@@ -66,15 +69,22 @@
               <div class="field is-grouped">
                 {{ if .appsURL }}
                 <p class="control">
-                  <a class="button is-text is-white" target="_blank" href="{{.appsURL}}">
+                  <a rel="noreferrer" class="button is-small is-text is-white" target="_blank" href="{{.appsURL}}">
                     <span>Apps</span>
                   </a>
                 </p>
                 {{ end }}
                 {{ if .sessionsURL }}
                 <p class="control">
-                  <a class="button is-text is-white" target="_blank" href="{{.sessionsURL}}">
+                  <a rel="noreferrer" class="button is-small is-text is-white" target="_blank" href="{{.sessionsURL}}">
                     <span>Sessions</span>
+                  </a>
+                </p>
+                {{ end }}
+                {{ if .devicesURL }}
+                <p class="control">
+                  <a rel="noreferrer" class="button is-small is-text is-white" target="_blank" href="{{.devicesURL}}">
+                    <span>Devices</span>
                   </a>
                 </p>
                 {{ end }}

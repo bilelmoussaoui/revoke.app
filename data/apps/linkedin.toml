@@ -1,5 +1,6 @@
 name="LinkedIn"
 sessionsURL="https://www.linkedin.com/psettings/sessions"
 appsURL="https://www.linkedin.com/psettings/permitted-services"
+devicesURL="https://www.linkedin.com/psettings/rememberme"
 backgroundColor="#0077B5"
 foregroundColor="#ffffff"
