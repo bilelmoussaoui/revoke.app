@@ -1,5 +1,5 @@
 name="Microsoft"
-appsURL="https://account.microsoft.com/privacy/"
+appsURL="https://account.live.com/consent/Manage?mkt=en-US&client_flight=m365.suiteheader"
 devicesURL="https://account.microsoft.com/devices/"
 backgroundColor="#71A206"
 foregroundColor="#ffffff"
